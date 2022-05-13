@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background-color: rgb(214, 214, 214);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+a:visited {
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+}
+
+.iconAnchor {
+    margin-left: 10px;
+}
+
+.navButton1 {
+    display: none;
+    padding: 15px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 50px;
+}
+
+.navButton2 {
+    display: none;
+    padding: 15px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 50px;
+}
+
+.navButton3 {
+    display: none;
+    padding: 15px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 50px;
+}
+
+.navButtons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* 
+
+
+FIN DE NAVBAR - INICIO DEL MAIN 
+
+
+*/
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.introContainer {
+    /*margin-top: 20px; */
+    width: 100%;
+    /* FOR PC QUERIES : 80% */
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.introTexts {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 90px;
+}
+
+#extraText {
+    margin-top: 150px;
+    padding: 50px;
+    text-align: center;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* ROW FOR PC */
+    gap: 25px;
+}
+
+.contactButton {
+    padding: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: wider;
+    font-weight: 700;
+    font-size: large;
+    background-color: rgb(51, 83, 112);
+    border-radius: 25px;
+    border: none;
+}
+
+.infoButton {
+    padding: 15px;
+    color: whsite;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: wider;
+    font-weight: 700;
+    font-size: large;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid rgb(51, 83, 112);
+}
+
+.mainImgDiv {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 30px;
+}
+
+/*
+
+BENEFICIOS
+
+*/
+.beneficios {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.beneficios h4 {
+    margin-top: 15px;
+}
+
+
+.beneficiosText {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+
+}
+
+.beneficiosLista {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 150px;
+    margin-top: 150px;
+}
+
+.benefDesc {
+    margin-top: 15px;
+}
+
+
+
+@media (min-width: 1024px) {
+    main {
+        width: 90vw;
+        left: 5vw;
+        right: 5vw;
+    }
+
+    .introContainer {
+        width: 80%;
+        flex-direction: row;
+        padding-top: 70px;
+    }
+
+    .buttons {
+        flex-direction: row;
+    }
+
+    .navButton1 {
+        display: inline;
+    }
+
+    .navButton2 {
+        display: inline;
+    }
+
+    .navButton3 {
+        display: inline;
+    }
+
+    .menuIcon {
+        display: none;
+    }
+
+    .introTexts {
+        padding: 40px;
+    }
+
+    .beneficiosLista {
+        flex-direction: row;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-top: 50px;
+    }
+
+    .mainImgDiv {
+        display: inline;
+    }
+
+    .introContainer {
+        margin-top: 0px;
+    }
+}
