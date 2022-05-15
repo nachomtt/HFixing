@@ -460,6 +460,9 @@ MEDIA QUERIES
     }
     .trabajoLista {
         flex-direction: row;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-top: 50px;
     }
     .historialImgs {
         margin-top: 50px;
