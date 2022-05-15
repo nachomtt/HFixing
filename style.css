@@ -208,9 +208,9 @@ BENEFICIOS
 }
 
 .beneficiosLista {
-    display: flex;
+    display: grid;
     text-align: center;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     padding-left: 50px;
     padding-right: 50px;
     gap: 150px;
@@ -261,9 +261,9 @@ HOW WE WORK
 }
 
 .trabajoLista {
-    display: flex;
+    display: grid;
     text-align: center;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     padding-left: 50px;
     padding-right: 50px;
     gap: 150px;
@@ -445,10 +445,11 @@ MEDIA QUERIES
     }
 
     .beneficiosLista {
-        flex-direction: row;
+        /* flex-direction: row;
         padding-left: 2px;
         padding-right: 2px;
-        margin-top: 50px;
+        margin-top: 50px; */
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .mainImgDiv {
@@ -459,10 +460,11 @@ MEDIA QUERIES
         margin-top: 0px;
     }
     .trabajoLista {
-        flex-direction: row;
+        /* flex-direction: row;
         padding-left: 2px;
         padding-right: 2px;
-        margin-top: 50px;
+        margin-top: 50px; */
+        grid-template-columns: repeat(3, 1fr);
     }
     .historialImgs {
         margin-top: 50px;
